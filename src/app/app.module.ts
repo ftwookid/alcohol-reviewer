@@ -7,7 +7,12 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { SingleCardComponent } from './main-page/single-card/single-card.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainPageComponent, SingleCardComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MainPageComponent,
+    SingleCardComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
