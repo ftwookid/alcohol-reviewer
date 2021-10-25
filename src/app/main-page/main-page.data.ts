@@ -11,6 +11,11 @@ export const products: ProductItemModel[] = [
     rating: 4.1,
   },
   {
+    name: 'Tomatin',
+    imageLink: '/assets/img/TomatinLegacy.png',
+    rating: 4.6,
+  },
+  {
     name: 'Pomoi ebanie',
     imageLink: '/assets/img/ballantines.png',
     rating: 0,

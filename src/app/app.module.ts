@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SingleCardComponent } from './main-page/single-card/single-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardModalComponent } from './main-page/card-modal/card-modal.component';
+
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -12,8 +16,10 @@ import { SingleCardComponent } from './main-page/single-card/single-card.compone
     HeaderComponent,
     MainPageComponent,
     SingleCardComponent,
+    CardModalComponent,
   ],
-  imports: [BrowserModule],
+  entryComponents: [CardModalComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, MatDialogModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from './main-page.data';
+import { MatDialog } from '@angular/material/dialog';
+import { CardModalComponent } from './card-modal/card-modal.component';
 
 @Component({
   selector: 'app-main-page',
@@ -9,7 +11,11 @@ import { products } from './main-page.data';
 export class MainPageComponent implements OnInit {
   public products = products;
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(CardModalComponent);
+  }
 
   ngOnInit(): void {}
 }
