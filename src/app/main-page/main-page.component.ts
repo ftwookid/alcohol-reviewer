@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from './main-page.data';
+import { ProductItemModel, products } from './main-page.data';
 import { MatDialog } from '@angular/material/dialog';
 import { CardModalComponent } from './card-modal/card-modal.component';
 
@@ -13,8 +13,12 @@ export class MainPageComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
-    this.dialog.open(CardModalComponent);
+  openDialog(product: ProductItemModel) {
+    this.dialog.open(CardModalComponent, {
+      height: '1000px',
+      width: '1200px',
+      data: { product: product },
+    });
   }
 
   ngOnInit(): void {}

@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardModalComponent } from './main-page/card-modal/card-modal.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     CardModalComponent,
   ],
   entryComponents: [CardModalComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatDialogModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

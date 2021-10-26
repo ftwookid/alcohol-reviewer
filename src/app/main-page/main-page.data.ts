@@ -16,6 +16,11 @@ export const products: ProductItemModel[] = [
     rating: 4.6,
   },
   {
+    name: 'Old Virginia',
+    imageLink: '/assets/img/OldVirginia.png',
+    rating: 3.8,
+  },
+  {
     name: 'Pomoi ebanie',
     imageLink: '/assets/img/ballantines.png',
     rating: 0,

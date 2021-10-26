@@ -1,1 +1,26 @@
-<p>card-modal works!</p>
+<div class="card-modal">
+  <div class="card-modal_header">
+    <h2 mat-dialog-title>{{ data.product.name }}</h2>
+    <div class="card-modal_btn-close" [mat-dialog-close]="true">
+      <div class="card-modal_btn-close_leftright"></div>
+      <div class="card-modal_btn-close_rightleft"></div>
+    </div>
+  </div>
+  <div class="card-modal_content" mat-dialog-content>
+    <div class="card-modal_img-box">
+      <img
+        src="{{ data.product.imageLink }}"
+        alt="Alcohol Picture"
+        class="card-modal_img-box_image"
+      />
+    </div>
+    <div class="card-modal_fullname">fullname</div>
+    <div class="card-modal_capacity">Capacity</div>
+    <div class="card-modal_age">age of whiskey</div>
+    <div class="card-modal_country">country comes from</div>
+    <div class="card-modal_rating">
+      <div class="card-modal_rating-ivan"></div>
+      <div class="card-modal_rating-nikolay"></div>
+    </div>
+  </div>
+</div>
