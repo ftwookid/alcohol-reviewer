@@ -78,7 +78,7 @@ export const products: ProductItemModel[] = [
     name: 'Old Virginia',
     imageLink: '/assets/img/OldVirginia.png',
     rating: 3.8,
-    fullName: 'Tomatin Legacy. Highland single malt scotch whisky',
+    fullName: 'Old Virginia. Kentucky straight bourbon whiskey',
     size: 0.7,
     description:
       'It is characterized by spicy vanilla and caramel notes and a backbone of wood. Produced and matured for 6 years in the state of Kentucky in the United States, OLD VIRGINIA is an authentic straight Bourbon Whiskey that combines sweetness and body.',

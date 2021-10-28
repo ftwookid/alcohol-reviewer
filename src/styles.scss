@@ -1,12 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Marcellus+SC&display=swap");
 html,
 body {
   height: 100%;
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .card-modal_backdrop {
@@ -15,4 +17,15 @@ body {
 .card-modal_background .mat-dialog-container {
   background-color: cadetblue;
   border-radius: 3.5%;
+}
+
+// FONTS
+.font-cinzel {
+  font-family: "Cinzel", serif;
+}
+.font-marcellus {
+  font-family: "Marcellus SC", serif;
+}
+.font-lora {
+  font-family: "Lora", serif;
 }

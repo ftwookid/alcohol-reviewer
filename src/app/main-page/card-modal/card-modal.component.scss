@@ -3,16 +3,45 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 70px;
+    &-h {
+      margin-left: 23px;
+      font-size: 36px;
+      font-weight: bold;
+    }
   }
   &_img-box {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+
     &_image {
       max-height: 400px;
       max-width: 400px;
     }
   }
-  //   &_background {
-  //     background-color: #f4a259;
-  //   }
+  &_info-box {
+    padding-left: 40px;
+    width: 65%;
+  }
+  &_content {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+
+    padding: 0 5% 0 5%;
+  }
+  &_individual-rating {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  &_overall-rating {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
   &_btn-close {
     position: relative;
     width: 25px;
@@ -50,4 +79,40 @@
       opacity: 1;
     }
   }
+
+  &_fullname {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &_description {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-weight: 100;
+  }
+  &_definition {
+    font-weight: 700;
+  }
+}
+.card-modal_rating_nikolay p,
+.card-modal_rating_ivan p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card-modal_cask,
+.card-modal_country,
+.card-modal_age,
+.card-model_strength,
+.card-modal_capacity {
+  margin-bottom: 7px;
+}
+.card-modal_rating_aroma,
+.card-modal_rating_taste,
+.card-modal_rating_scalding {
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
 }

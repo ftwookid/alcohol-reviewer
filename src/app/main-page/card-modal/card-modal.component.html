@@ -1,6 +1,9 @@
 <div class="card-modal">
   <div class="card-modal_header">
-    <h2 mat-dialog-title>{{ data.product.name }}</h2>
+    <div class="empty-div"></div>
+    <h2 mat-dialog-title class="card-modal_header-h font-marcellus">
+      {{ data.product.name }}
+    </h2>
     <div class="card-modal_btn-close" [mat-dialog-close]="true">
       <div class="card-modal_btn-close_leftright"></div>
       <div class="card-modal_btn-close_rightleft"></div>
@@ -14,13 +17,66 @@
         class="card-modal_img-box_image"
       />
     </div>
-    <div class="card-modal_fullname">fullname</div>
-    <div class="card-modal_capacity">Capacity</div>
-    <div class="card-modal_age">age of whiskey</div>
-    <div class="card-modal_country">country comes from</div>
-    <div class="card-modal_rating">
-      <div class="card-modal_rating-ivan"></div>
-      <div class="card-modal_rating-nikolay"></div>
+    <div class="card-modal_info-box">
+      <div class="card-modal_fullname font-cinzel">
+        {{ data.product.fullName }}
+      </div>
+      <div class="card-modal_description">{{ data.product.description }}</div>
+      <div class="card-modal_overall-rating">
+        Overall rating: {{ data.product.rating }}
+      </div>
+      <div class="card-modal_individual-rating">
+        <div class="card-modal_rating_ivan">
+          <p>Ivan</p>
+          <div class="card-modal_rating_aroma">
+            <span class="card-modal_definition">Aroma: </span>
+            {{ data.product.aroma.ivan }}
+          </div>
+          <div class="card-modal_rating_taste">
+            <span class="card-modal_definition">Taste: </span>
+            {{ data.product.taste.ivan }}
+          </div>
+          <div class="card-modal_rating_scalding">
+            <span class="card-modal_definition">Scalding: </span>
+            {{ data.product.scalding.ivan }}
+          </div>
+        </div>
+        <div class="card-modal_rating_nikolay">
+          <p>Nikolay</p>
+          <div class="card-modal_rating_aroma">
+            <span class="card-modal_definition">Aroma: </span>
+            {{ data.product.aroma.nikolay }}
+          </div>
+          <div class="card-modal_rating_taste">
+            <span class="card-modal_definition">Taste: </span>
+            {{ data.product.taste.nikolay }}
+          </div>
+          <div class="card-modal_rating_scalding">
+            <span class="card-modal_definition">Scalding: </span>
+            {{ data.product.scalding.nikolay }}
+          </div>
+        </div>
+      </div>
+      <div class="card-modal_capacity">
+        <span class="card-modal_definition">Size: </span
+        >{{ data.product.size }} ml
+      </div>
+      <div class="card-model_strength">
+        <span class="card-modal_definition">Strength: </span>
+        {{ data.product.strength }} % Vol.
+      </div>
+      <div class="card-modal_age">
+        <span class="card-modal_definition">Age:</span>
+        {{ data.product.age }} y.o
+      </div>
+      <div class="card-modal_country">
+        <span class="card-modal_definition">Country: </span>
+        {{ data.product.country }}
+      </div>
+      <div class="card-modal_cask">
+        <span class="card-modal_definition">Cask: </span>
+        {{ data.product.casc }}
+      </div>
     </div>
   </div>
 </div>
