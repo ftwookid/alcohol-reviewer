@@ -17,6 +17,12 @@ body {
 .card-modal_background .mat-dialog-container {
   background-color: cadetblue;
   border-radius: 3.5%;
+  max-height: unset;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 }
 
 // FONTS

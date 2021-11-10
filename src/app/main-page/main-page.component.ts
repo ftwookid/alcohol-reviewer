@@ -16,6 +16,7 @@ export class MainPageComponent implements OnInit {
   openDialog(product: ProductItemModel) {
     this.dialog.open(CardModalComponent, {
       height: '800px',
+      maxHeight: '90vh',
       width: '850px',
       data: { product: product },
       panelClass: 'card-modal_background',
