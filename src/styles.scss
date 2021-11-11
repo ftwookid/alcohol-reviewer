@@ -35,3 +35,43 @@ body {
 .font-lora {
   font-family: "Lora", serif;
 }
+
+// Global assignments
+
+.btn-close_modal {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  &_leftright {
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background-color: #f4a259;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in;
+    margin-top: 10px;
+  }
+  &_rightleft {
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background-color: #f4a259;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in;
+    margin-top: 10px;
+  }
+  &:hover .btn-close_modal_leftright {
+    transform: rotate(-45deg);
+    background-color: #f25c66;
+  }
+  &:hover .btn-close_modal_rightleft {
+    transform: rotate(45deg);
+    background-color: #f25c66;
+  }
+  &:hover label {
+    opacity: 1;
+  }
+}
