@@ -1,7 +1,7 @@
 export interface ProductItemModel {
   name: string;
   imageLink: string;
-  rating?: number;
+  rating: number;
   fullName: string;
   size: number;
   description: string;
@@ -10,25 +10,47 @@ export interface ProductItemModel {
   casc: string;
   strength: number;
   aroma: {
-    ivan: number;
-    nikolay: number;
+    ivan?: number;
+    nikolay?: number;
   };
   taste: {
-    ivan: number;
-    nikolay: number;
+    ivan?: number;
+    nikolay?: number;
   };
   scalding: {
-    ivan: number;
-    nikolay: number;
+    ivan?: number;
+    nikolay?: number;
   };
 }
+
+// export const getRating = (item: ProductItemModel): number => {
+//   return item.aroma.ivan * 4;
+// };
+
+// export class MyProduct implements ProductItemModel {
+//   public name: string;
+//   public imageLink: string;
+//   public fullName: string;
+//   public size: number;
+//   public description: string;
+//   public age: number;
+//   public country: string;
+//   public casc: string;
+//   public strength: number;
+//   public aroma: {};
+//   public taste: {};
+//   public scalding: {};
+//   getRating(item: ProductItemModel) {
+//     item.aroma.ivan * 3;
+//   }
+// }
 
 export const products: ProductItemModel[] = [
   {
     name: 'West cork',
     imageLink: '/assets/img/west-cork-bourbon-cask.jpg',
-    rating: 4.1,
     fullName: 'West Cork Blended Irish Whiskey',
+    rating: 4,
     size: 0.7,
     description:
       'A delicate blend of grain (75%) and malt (25%) whiskey matured in bourbon casks, with a slight citrus and cracked pepper aroma. A smooth and balanced whiskey, the taste is one of malt, lingering sweetness, citrus, apple and nutmeg.',
@@ -121,6 +143,98 @@ export const products: ProductItemModel[] = [
     scalding: {
       ivan: 1,
       nikolay: 1,
+    },
+  },
+  {
+    name: 'Oakheart',
+    imageLink:
+      'https://cdn.shopify.com/s/files/1/0076/0021/0033/products/600388_1_4be597dd-529b-4d22-8296-1c389bfac867.png?v=1579603956',
+    rating: 5,
+    fullName: 'Bacardi Oakheart Original Spiced',
+    size: 1,
+    description:
+      'Bacardi Oakheart is a spiced rum-based spirit and is so-called because some of the rums are matured in ex-bourbon oak casks. Notes of brown sugar, honey and burnt vanilla custard with a short, lightly cinnamony finish.',
+    age: 1,
+    country: 'USA',
+    casc: 'American Oak',
+    strength: 35,
+    aroma: {
+      ivan: 5,
+    },
+    taste: {
+      ivan: 4.4,
+    },
+    scalding: {
+      ivan: 3.2,
+    },
+  },
+  {
+    name: 'Red Label',
+    imageLink:
+      'https://cdn.shopify.com/s/files/1/0076/0021/0033/products/801460_a2a39673-35d3-4ac5-ae76-3e23dc658ea5.png?v=1579603564',
+    rating: 4,
+    fullName: 'Johnnie Walker Red Label. Blended scotch whisky',
+    size: 0.7,
+    description:
+      'Experience the spiciness and freshness of elegant Spaceside and Highland malts in the aroma of our classic Johnnie Walker Red Label. An exotic combination of spicy cinnamon and fresh black pepper that explodes on your tongue. All flavors combine into a long final note with a hint of smoke - the signature note of all Johnnie Walker blends.',
+    age: 4,
+    country: 'Scotland',
+    casc: 'Oak casks',
+    strength: 40,
+    aroma: {
+      ivan: 4,
+    },
+    taste: {
+      ivan: 4,
+    },
+    scalding: {
+      ivan: 4.6,
+    },
+  },
+  {
+    name: 'Jameson',
+    imageLink:
+      'https://winewine.com.ua/wp-content/uploads/2020/04/jameson-07.png',
+    rating: 4.4,
+    fullName: 'Jameson Irish Whiskey',
+    size: 1,
+    description:
+      'Jameson Irish Whiskey is made by blending rich pot still whiskey made from both malted and unmalted barley, with the finest grain whiskey, both distilled 3 times for smoothness. And while our barley is all grown locally in Ireland, our water comes from the Dungourney river, which flows right through our distillery.',
+    age: 6,
+    country: 'Ireland',
+    casc: 'Oak casks',
+    strength: 40,
+    aroma: {
+      ivan: 4,
+    },
+    taste: {
+      ivan: 4.4,
+    },
+    scalding: {
+      ivan: 3.8,
+    },
+  },
+  {
+    name: 'Lauders',
+    imageLink:
+      'https://lh3.googleusercontent.com/proxy/9qVMg2Z6aBB8HMdxlxi9Ek2vFfXlawAQFIqI8qJiVln9qYtJWDBcryPv6PU2jKomlqPxSMtgJ_DoCnj0-4MqKNSSvtU98TwwpUVzZ4Fhb4k1Ib-D',
+    rating: 3.6,
+    fullName: 'Lauders. Finest Blended Scotch Whisky',
+    size: 1,
+    description:
+      'Originally created to meet the Glaswegian “Sweet-Tooth” of the clientele who frequented the public houses he owned. Blended from the finest Highland, Lowland and Speyside malts, matured in bourbon oak casks to create a light, yet fruity and full-bodied Scotch which has been in continuous production since 1834.',
+    age: 4,
+    country: 'Scotland',
+    casc: 'Bourbon casks',
+    strength: 40,
+    aroma: {
+      ivan: 3.9,
+    },
+    taste: {
+      ivan: 2.6,
+    },
+    scalding: {
+      ivan: 4.7,
     },
   },
 ];

@@ -1,4 +1,4 @@
-import { Input } from '@angular/core';
+import { Inject, Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { ProductItemModel } from '../main-page.data';
 
