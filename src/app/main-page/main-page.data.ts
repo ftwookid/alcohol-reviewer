@@ -217,7 +217,7 @@ export const products: ProductItemModel[] = [
   {
     name: 'Lauders',
     imageLink:
-      'https://lh3.googleusercontent.com/proxy/9qVMg2Z6aBB8HMdxlxi9Ek2vFfXlawAQFIqI8qJiVln9qYtJWDBcryPv6PU2jKomlqPxSMtgJ_DoCnj0-4MqKNSSvtU98TwwpUVzZ4Fhb4k1Ib-D',
+      'https://cdn.shopify.com/s/files/1/0533/6412/9964/products/LaudersFinest350mlpng_300x450.png?v=1623204486',
     rating: 3.6,
     fullName: 'Lauders. Finest Blended Scotch Whisky',
     size: 1,
@@ -235,6 +235,31 @@ export const products: ProductItemModel[] = [
     },
     scalding: {
       ivan: 4.7,
+    },
+  },
+  {
+    name: 'Jameson. Stout Edition',
+    imageLink:
+      'https://l-wine.ru/upload/resize_cache/iblock/f6f/800_900_0/f6f1358762d364b54a90f7daaff86ab7.png',
+    rating: 3.9,
+    fullName: 'Jameson Irish Whiskey. Stout Edition',
+    size: 1,
+    description: 'Irish Whiskey, craft beer barrels',
+    age: 4,
+    country: 'Ireland',
+    casc: 'Stout beer casks',
+    strength: 40,
+    aroma: {
+      ivan: 4.2,
+      nikolay: 4,
+    },
+    taste: {
+      ivan: 3.3,
+      nikolay: 3.8,
+    },
+    scalding: {
+      ivan: 3.7,
+      nikolay: 3.5,
     },
   },
 ];

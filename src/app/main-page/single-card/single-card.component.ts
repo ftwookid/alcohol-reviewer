@@ -1,6 +1,7 @@
-import { Inject, Input } from '@angular/core';
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { ProductItemModel } from '../main-page.data';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-single-card',
